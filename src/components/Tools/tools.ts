@@ -720,7 +720,7 @@ export function urlKeyMap() {
 //获取工具
 export function getTools(data: ToolsReqData) {
   //接收参数
-  const { cateId, title } = data
+  const { cateId, title, route } = data
   //获取工具list
   let list = toolsList()
   //标题筛选
@@ -736,6 +736,15 @@ export function getTools(data: ToolsReqData) {
   if (cateId > 0) {
     list = list.filter(item => {
       return item.cateId == cateId;  
+    });
+  }
+  //路由筛选
+  if (route) {
+    list = list.filter(item => {
+      // 移除末尾的斜杠后比较
+      const itemUrl = item.url.replace(/\/$/, '');
+      const routeUrl = route.replace(/\/$/, '');
+      return itemUrl === routeUrl;
     });
   }
   return list
