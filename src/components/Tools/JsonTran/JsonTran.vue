@@ -3,6 +3,7 @@ import { reactive } from 'vue'
 import DetailHeader from '@/components/Layout/DetailHeader/DetailHeader.vue'
 import ToolDetail from '@/components/Layout/ToolDetail/ToolDetail.vue'
 import { transferred, copy } from '@/utils/string';
+
 import { Codemirror } from "vue-codemirror";
 import { json } from '@codemirror/lang-json';
 import '@codemirror/search';

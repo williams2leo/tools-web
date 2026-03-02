@@ -431,6 +431,227 @@ export const constantRoute = [
       description: '在线富文本编辑, html实时预览，在线编辑文本，文本编辑获取html',
     }
   },
+  {
+    path: '/base64',
+    component: () => import('@/components/Tools/Base64/Base64.vue'),
+    name: 'Base64',
+    meta: {
+      title: "Base64加解密",
+      keywords: 'Base64,base64加密,base64解密,base64编码,base64解码',
+      description: '在线Base64加解密工具，支持文本的Base64编码和解码',
+    }
+  },
+  {
+    path: '/baseconverter',
+    component: () => import('@/components/Tools/BaseConverter/BaseConverter.vue'),
+    name: 'baseconverter',
+    meta: {
+      title: "进制转换计算器",
+      keywords: '进制转换,二进制,八进制,十进制,十六进制,进制计算器',
+      description: '在线进制转换计算器，支持二进制、八进制、十进制、十六进制等多种进制之间的相互转换',
+    }
+  },
+  {
+    path: '/storageconverter',
+    component: () => import('@/components/Tools/StorageConverter/StorageConverter.vue'),
+    name: 'storageconverter',
+    meta: {
+      title: "数据存储单位换算",
+      keywords: '存储单位换算,字节,KB,MB,GB,TB,PB,EB',
+      description: '在线数据存储单位换算工具，支持字节、KB、MB、GB、TB、PB、EB等存储单位之间的相互转换',
+    }
+  },
+  {
+    path: '/aes',
+    component: () => import('@/components/Tools/AES/AES.vue'),
+    name: 'aes',
+    meta: {
+      title: "AES加解密",
+      keywords: 'AES加密,AES解密,加密工具,解密工具',
+      description: '在线AES加解密工具，支持CBC和ECB模式，支持128位、192位、256位密钥长度',
+    }
+  },
+  {
+    path: '/hashcalculator',
+    component: () => import('@/components/Tools/HashCalculator/HashCalculator.vue'),
+    name: 'hashcalculator',
+    meta: {
+      title: "Hash计算器",
+      keywords: 'Hash计算器,MD5,SHA-1,SHA-256,SHA-384,SHA-512',
+      description: '在线Hash计算器，支持MD5、SHA-1、SHA-256、SHA-384、SHA-512等多种哈希算法',
+    }
+  },
+  {
+    path: '/xmlformat',
+    component: () => import('@/components/Tools/XmlFormat/XmlFormat.vue'),
+    name: 'xmlformat',
+    meta: {
+      title: "XML格式化",
+      keywords: 'XML格式化,XML压缩,XML美化',
+      description: '在线XML格式化工具，用于美化和压缩XML代码，支持自定义缩进大小',
+    }
+  },
+  {
+    path: '/sqlformat',
+    component: () => import('@/components/Tools/SqlFormat/SqlFormat.vue'),
+    name: 'sqlformat',
+    meta: {
+      title: "SQL格式化",
+      keywords: 'SQL格式化,SQL压缩,SQL美化',
+      description: '在线SQL格式化工具，用于美化和压缩SQL代码，支持自定义缩进大小',
+    }
+  },
+  {
+    path: '/textreplace',
+    component: () => import('@/components/Tools/TextReplace/TextReplace.vue'),
+    name: 'textreplace',
+    meta: {
+      title: "文本替换",
+      keywords: '文本替换,正则表达式替换,批量替换',
+      description: '在线文本替换工具，支持普通文本和正则表达式替换，可用于批量修改文本内容',
+    }
+  },
+  {
+    path: '/textworkflow',
+    component: () => import('@/components/Tools/TextWorkflow/TextWorkflow.vue'),
+    name: 'textworkflow',
+    meta: {
+      title: "文本处理工作流",
+      keywords: '文本处理,工作流,批量处理',
+      description: '在线文本处理工作流工具，允许用户定义一系列文本处理步骤并按顺序执行',
+    }
+  },
+  {
+    path: '/emoji',
+    component: () => import('@/components/Tools/Emoji/Emoji.vue'),
+    name: 'emoji',
+    meta: {
+      title: "Emoji表情大全",
+      keywords: 'Emoji,表情符号,表情大全',
+      description: '在线Emoji表情大全，提供各种分类的Emoji表情，点击即可复制到剪贴板',
+    }
+  },
+  {
+    path: '/wordfrequency',
+    component: () => import('@/components/Tools/WordFrequency/WordFrequency.vue'),
+    name: 'wordfrequency',
+    meta: {
+      title: "词频统计",
+      keywords: '词频统计,文本分析,关键词提取',
+      description: '在线词频统计工具，用于统计文本中单词出现的频率，可用于文本分析、关键词提取等场景',
+    }
+  },
+  {
+    path: '/wordcloud',
+    component: () => import('@/components/Tools/WordCloud/WordCloud.vue'),
+    name: 'wordcloud',
+    meta: {
+      title: "词云生成",
+      keywords: '词云,文本可视化,词频分析',
+      description: '根据输入文本生成词云图，支持自定义词云形状和颜色',
+    }
+  },
+  {
+    path: '/lottery',
+    component: () => import('@/components/Tools/Lottery/Lottery.vue'),
+    name: 'lottery',
+    meta: {
+      title: "抽签工具",
+      keywords: '抽签,随机选择,抽奖',
+      description: '输入多个选项，随机抽取一个或多个结果',
+    }
+  },
+  {
+    path: '/rockpaperscissors',
+    component: () => import('@/components/Tools/RockPaperScissors/RockPaperScissors.vue'),
+    name: 'rockpaperscissors',
+    meta: {
+      title: "剪刀石头布",
+      keywords: '剪刀石头布,游戏,对战',
+      description: '与电脑对战的剪刀石头布游戏',
+    }
+  },
+  {
+    path: '/wheel',
+    component: () => import('@/components/Tools/Wheel/Wheel.vue'),
+    name: 'wheel',
+    meta: {
+      title: "转盘工具",
+      keywords: '转盘,随机选择,抽奖',
+      description: '自定义选项，旋转转盘随机选择结果',
+    }
+  },
+  {
+    path: '/imagecolorpicker',
+    component: () => import('@/components/Tools/ImageColorPicker/ImageColorPicker.vue'),
+    name: 'imagecolorpicker',
+    meta: {
+      title: "传图取色",
+      keywords: '图片取色,颜色提取,色彩分析',
+      description: '上传图片并点击图片获取颜色值',
+    }
+  },
+  {
+    path: '/pomodoro',
+    component: () => import('@/components/Tools/Pomodoro/Pomodoro.vue'),
+    name: 'pomodoro',
+    meta: {
+      title: "番茄时钟",
+      keywords: '番茄工作法,时间管理,专注',
+      description: '专注工作和休息的时间管理工具',
+    }
+  },
+  {
+    path: '/calculator',
+    component: () => import('@/components/Tools/Calculator/Calculator.vue'),
+    name: 'calculator',
+    meta: {
+      title: "简易计算器",
+      keywords: '计算器,加减乘除,数学计算',
+      description: '基本的加减乘除计算工具',
+    }
+  },
+
+  {
+    path: '/reactiontest',
+    component: () => import('@/components/Tools/ReactionTest/ReactionTest.vue'),
+    name: 'reactiontest',
+    meta: {
+      title: "反应速度测试",
+      keywords: '反应速度,测试,游戏',
+      description: '测试你的反应速度，点击变色的方块',
+    }
+  },
+  {
+    path: '/m3u8player',
+    component: () => import('@/components/Tools/M3U8Player/M3U8Player.vue'),
+    name: 'm3u8player',
+    meta: {
+      title: "m3u8在线播放",
+      keywords: 'm3u8,视频播放,流媒体',
+      description: '播放m3u8格式的视频流',
+    }
+  },
+  {
+    path: '/imagewatermark',
+    component: () => import('@/components/Tools/ImageWatermark/ImageWatermark.vue'),
+    name: 'imagewatermark',
+    meta: {
+      title: "图片水印添加",
+      keywords: '图片水印,水印添加,图片处理',
+      description: '上传图片并添加文字水印',
+    }
+  },
+  {
+    path: '/colorpalette',
+    component: () => import('@/components/Tools/ColorPalette/ColorPalette.vue'),
+    name: 'colorpalette',
+    meta: {
+      title: "色板工具",
+      keywords: '色板,颜色,渐变色,Material Design',
+      description: '提供各种颜色的色板，点击颜色可复制颜色值',
+    }
+  },
   // 关于
   {
     path: '/about',
